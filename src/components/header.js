@@ -1,30 +1,36 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import { Navbar, Nav, Container } from "react-bootstrap"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import logo from '../assets/images/bros_with_banjos.svg';
 
 const Header = ({ siteTitle }) => (
-  <Navbar bg="light" variant="light">
-    <Container>
-      <Navbar.Brand href="#home">{siteTitle}</Navbar.Brand>
-      <Nav className="ml-auto">
-        <Nav.Link as={Link} to="/">
-          Home
-        </Nav.Link>
-        <Nav.Link as={Link} to="/about">
-          About
-        </Nav.Link>
-      </Nav>
-    </Container>
-  </Navbar>
-)
+	<Navbar bg="dark" variant="dark" expand="lg">
+		<Container>
+			<Navbar.Brand href="#home">
+				{logo ? <img className={`logo-image`} src={logo} /> : siteTitle}
+			</Navbar.Brand>
+			{/* <Navbar.Toggle aria-controls="navbar-nav" />
+			<Navbar.Collapse id="navbar-nav">
+				<Nav className="ml-auto">
+					<Nav.Link as={Link} to="/">
+						Home
+					</Nav.Link>
+					<Nav.Link as={Link} to="/recruitment">
+						Recruitment
+					</Nav.Link>
+				</Nav>
+			</Navbar.Collapse> */}
+		</Container>
+	</Navbar>
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+	siteTitle: PropTypes.string,
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+	siteTitle: ``,
+};
 
-export default Header
+export default Header;

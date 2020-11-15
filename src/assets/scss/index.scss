@@ -1,4 +1,19 @@
+@import './atoms/colors';
+@import './atoms/bootstrap-overwrites';
+@import '~bootstrap/scss/bootstrap';
 
-@import "./partials/colors";
-@import "./partials/bootstrap-overwrites";
-@import "~bootstrap/scss/bootstrap";
+// Atoms - Variables and Single Tags
+@import './atoms/buttons';
+@import './atoms/typography';
+@import './atoms/links';
+
+// Molecules - Made up of multiple Atoms
+@import './molecules/boss-kill-tile';
+@import './molecules/widget-title-bar';
+@import './molecules/hero';
+@import './molecules/discord-tile';
+
+// Organisms - Made up of multiple Atoms and/or Molecules
+@import './organisms/body';
+@import './organisms/header';
+@import './organisms/boss-kills';

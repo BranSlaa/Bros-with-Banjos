@@ -1,0 +1,31 @@
+a {
+	&.arrow-link {
+		position: relative;
+		font-weight: 500;
+		font-size: 1.25rem;
+
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url(../images/icons/arrow-narrow-right.svg);
+			width: 1.5rem;
+			height: 1rem;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			right: -1.5rem;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: right 0.3s ease;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+			&::after {
+				right: -2rem;
+			}
+		}
+	}
+}

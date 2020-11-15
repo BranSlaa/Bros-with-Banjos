@@ -1,16 +1,34 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Hero from '../components/hero';
+import BossKills from '../components/bossKills';
+import { Col, Container, Row } from 'react-bootstrap';
+import DiscordTile from '../components/discordTile';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-  </Layout>
-)
+const IndexPage = () => {
+	return (
+		<Layout>
+			<SEO title="Home" />
+			<Hero />
+			<Container className={`primary-container`}>
+				<Row>
+					<Col lg={9}>
+						<BossKills />
+					</Col>
+					<Col lg={3}>
+						<Row>
+							<Col>
+								<DiscordTile />
+							</Col>
+						</Row>
+					</Col>
+				</Row>
+			</Container>
+		</Layout>
+	);
+};
 
-export default IndexPage
+export default IndexPage;

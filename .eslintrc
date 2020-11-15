@@ -1,7 +1,7 @@
 {
-    "extends": "react-app",
-    "rules": {
-        "quotes": ["error", "backtick"],
-        "no-unused-vars": ["error"]
-    }
+	"extends": "react-app",
+	"rules": {
+		"quotes": ["error", "backtick"],
+		"no-unused-vars": ["error"]
+	}
 }

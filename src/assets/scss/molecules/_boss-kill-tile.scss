@@ -1,0 +1,83 @@
+.boss-kill-tile {
+	background-color: $almost-black-3;
+	margin-bottom: 0.5rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	position: relative;
+
+	& > *:last-child() {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: linear-gradient(
+			135deg,
+			rgba($black, 0.9) 0%,
+			rgba($black, 0.1) 100%
+		);
+	}
+
+	& > * {
+		position: relative;
+		z-index: 2;
+	}
+
+	.row {
+		width: 100%;
+	}
+
+	.boss-tile-name {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.boss-tile-difficulty {
+		font-size: 1.5rem;
+		color: rgba($white, 0.8);
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+
+		@include media-breakpoint-up(md) {
+			text-align: right;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.boss-tile-killdate {
+		font-size: 0.75rem;
+		color: $accent;
+		text-shadow: 0px 4px 8px rgba($black, 0.6);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
+	}
+
+	.boss-tile-raid {
+		font-size: 0.75rem;
+		color: rgba($white, 0.5);
+		text-shadow: 0px 4px 8px rgba($black, 0.6);
+		font-weight: 700;
+		margin-bottom: 0;
+
+		@include media-breakpoint-up(md) {
+			text-align: right;
+		}
+	}
+}

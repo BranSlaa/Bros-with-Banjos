@@ -1,0 +1,15 @@
+.btn {
+	background-color: $accent;
+	color: $white;
+	border-radius: 0;
+	padding: 0.5rem 1rem;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $white;
+		background-color: darken($accent, 10%);
+	}
+}

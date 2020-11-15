@@ -1,0 +1,14 @@
+.widget-title-bar {
+	border-top: 4px solid $accent;
+	background-image: linear-gradient($almost-black-2, $almost-black-3);
+
+	.widget-title {
+		padding: 0.75rem 1rem;
+		text-align: center;
+		background-color: $almost-black-2;
+		background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23020202' fill-opacity='0.37' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 1.125rem;
+	}
+}
