@@ -7,8 +7,16 @@ import logo from '../assets/images/bros_with_banjos.svg';
 const Header = ({ siteTitle }) => (
 	<Navbar bg="dark" variant="dark" expand="lg">
 		<Container>
-			<Navbar.Brand href="#home">
-				{logo ? <img className={`logo-image`} src={logo} /> : siteTitle}
+			<Navbar.Brand name="Bros with Banjos Homepage Link" href="#home">
+				{logo ? (
+					<img
+						alt="Bros with Banjos Logo"
+						className={`logo-image`}
+						src={logo}
+					/>
+				) : (
+					siteTitle
+				)}
 			</Navbar.Brand>
 			{/* <Navbar.Toggle aria-controls="navbar-nav" />
 			<Navbar.Collapse id="navbar-nav">

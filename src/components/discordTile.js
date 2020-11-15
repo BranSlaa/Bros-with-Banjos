@@ -9,8 +9,9 @@ const Hero = () => {
 				target="_blank"
 				className={`discord-tile-link`}
 				to="https://discord.gg/9VvYYhm"
+				name="Bros with Banjos Discord Link"
 			>
-				<img src={discordLogo} />
+				<img alt="Discord Logo" src={discordLogo} />
 			</Link>
 		</section>
 	);
