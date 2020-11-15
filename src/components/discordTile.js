@@ -6,6 +6,7 @@ const Hero = () => {
 	return (
 		<section className={`discord-tile`}>
 			<Link
+				rel="noopener noreferrer"
 				target="_blank"
 				className={`discord-tile-link`}
 				to="https://discord.gg/9VvYYhm"
