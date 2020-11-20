@@ -7,6 +7,7 @@ import Hero from '../components/hero';
 import BossKills from '../components/bossKills';
 import { Col, Container, Row } from 'react-bootstrap';
 import DiscordTile from '../components/discordTile';
+import RecruitTile from '../components/recruitTile';
 
 const IndexPage = () => {
 	return (
@@ -21,6 +22,7 @@ const IndexPage = () => {
 					<Col lg={3}>
 						<Row>
 							<Col>
+								<RecruitTile />
 								<DiscordTile />
 							</Col>
 						</Row>

@@ -1,0 +1,84 @@
+.recruit-container {
+	padding-top: 4rem;
+
+	.recruitment-blurb {
+		margin-bottom: 2rem;
+		.recruitment-blurb-content {
+			background-color: $almost-black-3;
+			padding: 1rem;
+			margin-bottom: 0rem;
+		}
+	}
+
+	.recruitment-classes {
+		background-color: $almost-black-3;
+		padding: 1rem;
+		.class-list {
+			margin-bottom: 1rem;
+			.class-name {
+				font-size: 1.125rem;
+
+				&.death-knight {
+					color: #c41f3b;
+				}
+
+				&.demon-hunter {
+					color: #a330c9;
+				}
+
+				&.druid {
+					color: #ff7d0a;
+				}
+
+				&.hunter {
+					color: #abd473;
+				}
+
+				&.mage {
+					color: #69ccf0;
+				}
+
+				&.monk {
+					color: #008467;
+				}
+
+				&.paladin {
+					color: #f58cba;
+				}
+
+				&.priest {
+					color: #ffffff;
+				}
+
+				&.rogue {
+					color: #fff569;
+				}
+
+				&.shaman {
+					color: #2459ff;
+				}
+
+				&.warlock {
+					color: #9482ca;
+				}
+
+				&.warrior {
+					color: #c79c6e;
+				}
+			}
+			.spec-list {
+				display: flex;
+				flex-flow: row wrap;
+				.spec {
+					padding-right: 0.5rem;
+					width: 3rem;
+					height: auto;
+
+					&.not-recruiting {
+						opacity: 0.1;
+					}
+				}
+			}
+		}
+	}
+}

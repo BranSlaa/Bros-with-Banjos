@@ -1,0 +1,20 @@
+.recruit-tile {
+	margin-bottom: 1rem;
+
+	.recruit-tile-link {
+		display: block;
+		background-color: $almost-black-3;
+		padding: 1rem;
+		color: $white;
+		transition: background-color 0.3s ease, border-bottom 0.3s ease;
+		border-bottom: 2px solid $almost-black-3;
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+			background-color: $almost-black-2;
+			border-color: $accent;
+		}
+	}
+}

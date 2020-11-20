@@ -9,9 +9,9 @@ const Hero = () => {
 				<Row>
 					<Col className={`hero-col`}>
 						<h1 className={`hero-title`}>Welcome Brothers!</h1>
-						{/* <Link className={`btn`} to="/recruitment">
+						<Link className={`btn`} to="/recruitment">
 							Recruitment
-						</Link> */}
+						</Link>
 					</Col>
 				</Row>
 			</Container>

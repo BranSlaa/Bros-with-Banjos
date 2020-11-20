@@ -1,15 +1,22 @@
 .btn {
-	background-color: $accent;
+	background-color: $almost-black-3;
 	color: $white;
 	border-radius: 0;
-	padding: 0.5rem 1rem;
-	font-size: 1.125rem;
+	padding: 0.5rem 1.25rem;
+	font-size: 1rem;
 	text-transform: uppercase;
+	border-top: 4px solid transparent;
+	border-left: none;
+	border-right: none;
+	border-bottom: 4px solid transparent;
+	letter-spacing: 2px;
+	font-weight: 500;
 
 	&:hover,
 	&:active,
 	&:focus {
 		color: $white;
-		background-color: darken($accent, 10%);
+		background-color: $almost-black-3;
+		border-bottom-color: $accent;
 	}
 }

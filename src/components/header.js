@@ -7,7 +7,7 @@ import logo from '../assets/images/bros_with_banjos.svg';
 const Header = ({ siteTitle }) => (
 	<Navbar bg="dark" variant="dark" expand="lg">
 		<Container>
-			<Navbar.Brand name="Bros with Banjos Homepage Link" href="#home">
+			<Navbar.Brand name="Bros with Banjos Homepage Link" href="/">
 				{logo ? (
 					<img
 						alt="Bros with Banjos Logo"
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
 					siteTitle
 				)}
 			</Navbar.Brand>
-			{/* <Navbar.Toggle aria-controls="navbar-nav" />
+			<Navbar.Toggle aria-controls="navbar-nav" />
 			<Navbar.Collapse id="navbar-nav">
 				<Nav className="ml-auto">
 					<Nav.Link as={Link} to="/">
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
 						Recruitment
 					</Nav.Link>
 				</Nav>
-			</Navbar.Collapse> */}
+			</Navbar.Collapse>
 		</Container>
 	</Navbar>
 );
