@@ -1,4 +1,7 @@
 .boss-kills {
+	@media screen and (max-width: 991px) {
+		margin-bottom: 1rem;
+	}
 	.boss-kills-row {
 		padding-top: 1rem;
 		padding-bottom: 1rem;

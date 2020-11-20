@@ -73,6 +73,9 @@
 					padding-right: 0.5rem;
 					width: 3rem;
 					height: auto;
+					@media screen and (min-width: 768px) and (max-width: 991px) {
+						padding-bottom: 0.5rem;
+					}
 
 					&.not-recruiting {
 						opacity: 0.1;
