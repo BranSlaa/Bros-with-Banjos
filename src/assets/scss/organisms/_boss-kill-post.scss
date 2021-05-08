@@ -11,7 +11,13 @@
 		padding: 0;
 		overflow: hidden;
 		display: flex;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.boss-kill-description {
+		margin-bottom: 1.5rem;
+		text-align: center;
+		font-size: 0.875rem;
 	}
 
 	.boss-tile-name {

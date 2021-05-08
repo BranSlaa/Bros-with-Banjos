@@ -26,6 +26,9 @@ export default function BossKillPost({ data }) {
 								alt={boss?.teamPicture?.file?.fileName}
 							/>
 						</div>
+						<div className="boss-kill-description">
+							{boss?.description}
+						</div>
 						<div className="boss-kill-post-content-wrapper">
 							<p className={`boss-tile-difficulty`}>
 								{`${boss?.bossNumber} / ${boss?.raid?.numberOfBosses} ${boss?.difficulty} -`}{' '}
@@ -49,6 +52,7 @@ export const query = graphql`
 			difficulty
 			killDate(formatString: "MMM, DD YYYY")
 			bossNumber
+			description
 			raid {
 				numberOfBosses
 				raidName
