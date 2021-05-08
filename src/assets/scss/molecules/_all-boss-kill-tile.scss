@@ -1,0 +1,55 @@
+.all-boss-kill-tile-col {
+	margin-bottom: 2rem;
+
+	.all-boss-kill-tile {
+		height: 100%;
+		background-color: $almost-black-3;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		position: relative;
+		border: 2px solid rgba($accent, 0.2);
+		border-radius: 4px;
+		overflow: hidden;
+
+		& > * {
+			position: relative;
+			z-index: 2;
+		}
+
+		.all-boss-kill-tile-wrapper {
+			padding: 1rem;
+		}
+
+		.boss-tile-name {
+			font-weight: 700;
+			margin-bottom: 0.5rem;
+		}
+
+		.boss-tile-difficulty {
+			font-size: 1rem;
+			color: rgba($white, 0.8);
+			font-weight: 700;
+			margin-bottom: 0.5rem;
+		}
+
+		.boss-tile-killdate {
+			font-size: 0.75rem;
+			color: $accent;
+			text-shadow: 0px 4px 8px rgba($black, 0.6);
+			font-weight: 700;
+			margin-bottom: 0.5rem;
+		}
+
+		.boss-tile-raid {
+			font-size: 0.75rem;
+			color: rgba($white, 0.5);
+			text-shadow: 0px 4px 8px rgba($black, 0.6);
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+	}
+}

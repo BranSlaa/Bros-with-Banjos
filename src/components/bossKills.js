@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import WidgetTitleBar from './widgetTitleBar';
 import BossKillTile from './bossKillTile';
@@ -50,11 +50,11 @@ const BossKills = ({}) => {
 								return <BossKillTile key={index} boss={boss} />;
 							})}
 					</Col>
-					{/* <Col xs={12} className={`all-boss-kills-link-col`}>
+					<Col xs={12} className={`all-boss-kills-link-col`}>
 						<Link className={`arrow-link`} to={`boss-kills`}>
 							View All
 						</Link>
-					</Col> */}
+					</Col>
 				</Row>
 			</Container>
 		</section>

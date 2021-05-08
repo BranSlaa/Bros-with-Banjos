@@ -27,6 +27,9 @@ const Header = ({ siteTitle }) => (
 					<Nav.Link as={Link} to="/recruitment">
 						Recruitment
 					</Nav.Link>
+					<Nav.Link as={Link} to="/boss-kills">
+						Boss Kills
+					</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Container>

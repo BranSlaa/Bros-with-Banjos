@@ -8,14 +8,16 @@
 @import './atoms/links';
 
 // Molecules - Made up of multiple Atoms
+@import './molecules/all-boss-kill-tile';
 @import './molecules/boss-kill-tile';
-@import './molecules/widget-title-bar';
-@import './molecules/hero';
 @import './molecules/discord-tile';
+@import './molecules/hero';
 @import './molecules/recruit-tile';
+@import './molecules/widget-title-bar';
 
 // Organisms - Made up of multiple Atoms and/or Molecules
+@import './organisms/all-boss-kills';
 @import './organisms/body';
-@import './organisms/recruitment';
-@import './organisms/header';
 @import './organisms/boss-kills';
+@import './organisms/header';
+@import './organisms/recruitment';

@@ -1,0 +1,18 @@
+.all-boss-kills {
+	@media screen and (max-width: 991px) {
+		margin-bottom: 1rem;
+	}
+	.container {
+		padding: 0;
+	}
+	.all-boss-kills-row {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		background-color: $almost-black-3;
+		margin: 0;
+
+		.all-boss-kills-link-col {
+			padding-top: 1rem;
+		}
+	}
+}
