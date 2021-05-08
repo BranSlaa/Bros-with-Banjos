@@ -12,11 +12,10 @@ const AllBossKillTile = ({ boss }) => (
 			/>
 			<div className="all-boss-kill-tile-wrapper">
 				<h2 className={`boss-tile-name`}>{boss?.bossName}</h2>
-				<h4
+				<p
 					className={`boss-tile-difficulty`}
-				>{`${boss?.bossNumber} / ${boss?.raid?.numberOfBosses} ${boss?.difficulty}`}</h4>
+				>{`${boss?.bossNumber} / ${boss?.raid?.numberOfBosses} ${boss?.difficulty} - ${boss?.raid?.raidName}`}</p>
 				<h4 className={`boss-tile-killdate`}>{boss?.killDate}</h4>
-				<p className={`boss-tile-raid`}>{boss?.raid?.raidName}</p>
 			</div>
 		</div>
 	</Col>
