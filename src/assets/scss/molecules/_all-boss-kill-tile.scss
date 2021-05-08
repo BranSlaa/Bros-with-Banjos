@@ -34,19 +34,14 @@
 			color: rgba($white, 0.8);
 			font-weight: 700;
 			margin-bottom: 0.5rem;
+			em {
+				color: rgba($white, 0.5);
+			}
 		}
 
 		.boss-tile-killdate {
 			font-size: 0.75rem;
 			color: $accent;
-			text-shadow: 0px 4px 8px rgba($black, 0.6);
-			font-weight: 700;
-			margin-bottom: 0.5rem;
-		}
-
-		.boss-tile-raid {
-			font-size: 0.75rem;
-			color: rgba($white, 0.5);
 			text-shadow: 0px 4px 8px rgba($black, 0.6);
 			font-weight: 700;
 			margin-bottom: 0;
