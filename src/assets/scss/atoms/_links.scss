@@ -31,19 +31,19 @@ a,
 		}
 
 		&.left {
-			padding-left: 2rem;
+			margin-left: 1.5rem;
 			&::after {
 				transform: scaleX(-1) translateY(-50%);
 				right: auto;
-				left: 0rem;
+				left: -1.5rem;
 			}
 
 			&:hover,
 			&:active,
 			&:focus {
 				&::after {
-					right: a;
-					left: -1rem;
+					right: auto;
+					left: -2rem;
 				}
 			}
 		}

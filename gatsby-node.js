@@ -38,17 +38,28 @@ exports.createPages = ({ graphql, actions }) => {
 					reject(result.errors);
 				}
 				const posts = result.data.allContentfulBossKills.nodes;
-				posts.forEach(post => {
-					const args = { lower: true };
-					const path = `/boss-kills/${post.slug}`;
-					createPage({
-						path: path,
-						component: bossKillPost,
-						context: {
-							slug: post.slug,
-						},
+				let x = 0;
+				posts
+					.sort(function (date1, date2) {
+						return (
+							new Date(date2.killDate) - new Date(date1.killDate)
+						);
+					})
+					.forEach(post => {
+						const path = `/boss-kills/${post.slug}`;
+						const next = posts[x + 1];
+						const prev = posts[x - 1];
+						createPage({
+							path: path,
+							component: bossKillPost,
+							context: {
+								slug: post.slug,
+								next: next,
+								prev: prev,
+							},
+						});
+						x++;
 					});
-				});
 			})
 		);
 	});

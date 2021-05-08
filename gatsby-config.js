@@ -21,6 +21,7 @@ module.exports = {
 		`gatsby-plugin-sharp`,
 		`gatsby-plugin-sass`,
 		`gatsby-plugin-modal-routing`,
+		`gatsby-plugin-image`,
 		{
 			resolve: `gatsby-source-contentful`,
 			options: {

@@ -1,10 +1,41 @@
 .boss-kill-post {
 	padding-top: 1.5rem;
-	.back-link {
-		margin-bottom: 2rem;
-		font-size: 0.875rem;
-		display: block;
-		width: fit-content;
+	.link-row {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		@include media-breakpoint-up(sm) {
+			flex-flow: row nowrap;
+		}
+		.back-link {
+			margin-bottom: 2rem;
+			font-size: 0.875rem;
+			display: block;
+			width: fit-content;
+		}
+
+		.next-prev {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			.next-prev-link {
+				margin-bottom: 2rem;
+				font-size: 0.875rem;
+				display: block;
+				width: fit-content;
+				color: rgba($white, 0.5);
+
+				&:hover,
+				&:active,
+				&:focus {
+					color: rgba($white, 0.8);
+				}
+				&:last-child {
+					margin-left: 1rem;
+					margin-right: 1.5rem;
+				}
+			}
+		}
 	}
 	.image-wrapper {
 		border-radius: 1rem;

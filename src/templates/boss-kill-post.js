@@ -5,7 +5,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-export default function BossKillPost({ data }) {
+export default function BossKillPost({ data, pageContext }) {
+	const { next, prev } = pageContext;
+	console.log(next);
+	console.log(prev);
 	const boss = data.contentfulBossKills;
 	return (
 		<Layout>
@@ -13,12 +16,36 @@ export default function BossKillPost({ data }) {
 			<Container>
 				<Row className={`boss-kill-post`}>
 					<Col>
-						<Link
-							to="/boss-kills"
-							className="back-link arrow-link left"
-						>
-							Back to Boss Kills
-						</Link>
+						<div className="link-row">
+							<Link
+								to="/boss-kills"
+								className="back-link arrow-link left"
+							>
+								Back to Boss Kills
+							</Link>
+							<div className="next-prev">
+								{prev ? (
+									<Link
+										to={`/boss-kills/${prev.slug}`}
+										className="next-prev-link arrow-link left"
+									>
+										{prev.bossName}
+									</Link>
+								) : (
+									''
+								)}
+								{next ? (
+									<Link
+										to={`/boss-kills/${next.slug}`}
+										className="next-prev-link arrow-link"
+									>
+										{next.bossName}
+									</Link>
+								) : (
+									''
+								)}
+							</div>
+						</div>
 						<h2 className={`boss-tile-name`}>{boss?.bossName}</h2>
 						<div className="image-wrapper">
 							<GatsbyImage
