@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
 
 const BossKillTile = ({ boss }) => (
-	<div
+	<Link
+		to={`/boss-kills/${boss.slug}`}
 		className="boss-kill-tile"
 		style={{ backgroundImage: `url(${boss?.bossPicture?.file?.url})` }}
 	>
@@ -23,7 +25,7 @@ const BossKillTile = ({ boss }) => (
 				<p className={`boss-tile-raid`}>{boss?.raid?.raidName}</p>
 			</Col>
 		</Row>
-	</div>
+	</Link>
 );
 
 BossKillTile.propTypes = {

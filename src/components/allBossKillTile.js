@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const AllBossKillTile = ({ boss }) => (
 	<Col xs={12} md={6} lg={4} className="all-boss-kill-tile-col">
-		<div className="all-boss-kill-tile">
+		<Link
+			to={`/boss-kills/${boss.slug}`}
+			name={`Boss Kill - ${boss.bossName}`}
+			className="all-boss-kill-tile"
+		>
 			<GatsbyImage
 				image={getImage(boss?.teamPicture)}
 				alt={boss?.teamPicture?.file?.fileName}
@@ -18,7 +23,7 @@ const AllBossKillTile = ({ boss }) => (
 				</p>
 				<p className={`boss-tile-killdate`}>{boss?.killDate}</p>
 			</div>
-		</div>
+		</Link>
 	</Col>
 );
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-
 import WidgetTitleBar from './widgetTitleBar';
 import BossKillTile from './bossKillTile';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -10,6 +9,7 @@ const BossKills = ({}) => {
 		query BossKillDataQuery {
 			allContentfulBossKills {
 				nodes {
+					slug
 					bossName
 					difficulty
 					killDate(formatString: "MMM, DD YYYY")

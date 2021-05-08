@@ -20,6 +20,7 @@ module.exports = {
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		`gatsby-plugin-sass`,
+		`gatsby-plugin-modal-routing`,
 		{
 			resolve: `gatsby-source-contentful`,
 			options: {

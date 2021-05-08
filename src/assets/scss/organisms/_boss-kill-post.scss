@@ -1,0 +1,39 @@
+.boss-kill-post {
+	padding-top: 1.5rem;
+	.back-link {
+		margin-bottom: 2rem;
+		font-size: 0.875rem;
+		display: block;
+		width: fit-content;
+	}
+	.image-wrapper {
+		border-radius: 1rem;
+		padding: 0;
+		overflow: hidden;
+		display: flex;
+		margin-bottom: 1rem;
+	}
+
+	.boss-tile-name {
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.boss-tile-difficulty {
+		font-size: 1rem;
+		color: rgba($white, 0.8);
+		font-weight: 700;
+		margin-bottom: 0rem;
+		em {
+			color: rgba($white, 0.5);
+		}
+	}
+
+	.boss-tile-killdate {
+		font-size: 0.75rem;
+		color: $accent;
+		text-shadow: 0px 4px 8px rgba($black, 0.6);
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+}

@@ -10,6 +10,7 @@ export default function AllBossKills() {
 		query AllBossKillDataQuery {
 			allContentfulBossKills {
 				nodes {
+					slug
 					bossName
 					difficulty
 					killDate(formatString: "MMM, DD YYYY")

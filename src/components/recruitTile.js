@@ -4,7 +4,7 @@ import WidgetTitleBar from './widgetTitleBar';
 
 const Hero = () => {
 	return (
-		<section className={`recruit-tile`}>
+		<section className={`recruit-tile arrow-link-parent`}>
 			<WidgetTitleBar text="Recruitment" />
 			<Link
 				className={`recruit-tile-link`}

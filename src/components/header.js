@@ -21,13 +21,22 @@ const Header = ({ siteTitle }) => (
 			<Navbar.Toggle aria-controls="navbar-nav" />
 			<Navbar.Collapse id="navbar-nav">
 				<Nav className="ml-auto">
-					<Nav.Link as={Link} to="/">
+					<Nav.Link activeClassName="is-active" as={Link} to="/">
 						Home
 					</Nav.Link>
-					<Nav.Link as={Link} to="/recruitment">
+					<Nav.Link
+						activeClassName="is-active"
+						activeClassName="is-active"
+						as={Link}
+						to="/recruitment"
+					>
 						Recruitment
 					</Nav.Link>
-					<Nav.Link as={Link} to="/boss-kills">
+					<Nav.Link
+						activeClassName="is-active"
+						as={Link}
+						to="/boss-kills"
+					>
 						Boss Kills
 					</Nav.Link>
 				</Nav>

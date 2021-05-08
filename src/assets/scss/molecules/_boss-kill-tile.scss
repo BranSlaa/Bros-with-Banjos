@@ -80,4 +80,13 @@
 			text-align: right;
 		}
 	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		.boss-tile-name {
+			text-decoration: underline;
+			color: $accent;
+		}
+	}
 }
