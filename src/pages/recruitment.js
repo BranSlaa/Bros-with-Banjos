@@ -184,13 +184,13 @@ const RecruitmentPage = ({ data }) => {
 					</Col>
 					<Col xs={12} md={8} className="recruitment-blurb">
 						<WidgetTitleBar text="Recruitment Information" />
-						<p
+						<div
 							className="recruitment-blurb-content"
 							dangerouslySetInnerHTML={{
 								__html:
 									data.allMarkdownRemark.edges[0].node.html,
 							}}
-						></p>
+						></div>
 					</Col>
 					<Col xs={12} md={3} className="">
 						<WidgetTitleBar text="Classes" />
