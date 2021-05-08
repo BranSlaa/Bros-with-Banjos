@@ -184,13 +184,13 @@ const RecruitmentPage = ({ data }) => {
 					</Col>
 					<Col xs={12} md={8} className="recruitment-blurb">
 						<WidgetTitleBar text="Recruitment Information" />
-						<p className="recruitment-blurb-content">
-							{
-								data.allContentfulRecruitment.nodes[0]
-									.childContentfulRecruitmentContentTextNode
-									.content
-							}
-						</p>
+						<p
+							className="recruitment-blurb-content"
+							dangerouslySetInnerHTML={{
+								__html:
+									data.allMarkdownRemark.edges[0].node.html,
+							}}
+						></p>
 					</Col>
 					<Col xs={12} md={3} className="">
 						<WidgetTitleBar text="Classes" />
@@ -262,6 +262,21 @@ export default RecruitmentPage;
 
 export const recruitmentQuery = graphql`
 	{
+		allMarkdownRemark {
+			edges {
+				node {
+					html
+					headings {
+						depth
+						value
+					}
+					frontmatter {
+						# Assumes you're using title in your frontmatter.
+						title
+					}
+				}
+			}
+		}
 		allContentfulRecruitment {
 			nodes {
 				classes {
